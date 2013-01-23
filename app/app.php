@@ -1,13 +1,16 @@
 <?php
 
+if (!strlen(getenv("ENV"))) {
+    defined('ENV') || define('ENV', 'development');
+} else {
+    defined('ENV') || define('ENV', getenv("ENV"));
+}
+
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
-$env = 'prod';
-defined('ENV')
-        || define('ENV', 'development');
 
-if ($env != 'prod') {
+if (ENV != 'production') {
     $app['debug'] = true;
 }
 
