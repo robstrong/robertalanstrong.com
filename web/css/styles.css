@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed);
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Cabin Condensed", sans-serif; }
+
+.background-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351F2B;
+  background-image: url("/images/ny_street_filtered.jpg");
+  background-position: center;
+  z-index: -1; }
+
+.content-container {
+  width: 780px;
+  height: 520px;
+  margin: 50px auto 0 auto; }
+
+.flip-box-container {
+  width: 260px;
+  height: 260px;
+  float: left;
+  position: relative; }
+
+.flip-box-container .flip-box {
+  width: 240px;
+  height: 240px;
+  margin: 5px;
+  padding: 5px;
+  transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  /* Firefox 4 */
+  -o-transition: all 250ms ease;
+  /* Opera */
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.flip-box-container .flip-box-front {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3em;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.7);
+  text-transform: lowercase;
+  color: #fff;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  /* IE 9 */
+  -moz-transform: rotateY(0deg);
+  /* Firefox */
+  -o-transform: rotateY(0deg);
+  /* Opera */
+  transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  /* Firefox 4 */
+  -o-transition-delay: 250ms;
+  /* Opera */ }
+
+.flip-box-container .flip-box-back {
+  background-color: #CFB095;
+  background: rgba(207, 176, 149, 0.7);
+  cursor: pointer;
+  transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  /* IE 9 */
+  -moz-transform: rotateY(90deg);
+  /* Firefox */
+  -o-transform: rotateY(90deg);
+  /* Opera */
+  transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  /* Firefox 4 */
+  -o-transition-delay: 0ms;
+  /* Opera */ }
+
+.flip-box-container:hover .flip-box-front {
+  transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  /* IE 9 */
+  -moz-transform: rotateY(90deg);
+  /* Firefox */
+  -o-transform: rotateY(90deg);
+  /* Opera */
+  transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  /* Firefox 4 */
+  -o-transition-delay: 0ms;
+  /* Opera */ }
+
+.flip-box-container:hover .flip-box-back {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  /* IE 9 */
+  -moz-transform: rotateY(0deg);
+  /* Firefox */
+  -o-transform: rotateY(0deg);
+  /* Opera */
+  transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  /* Firefox 4 */
+  -o-transition-delay: 250ms;
+  /* Opera */ }
+
+.static-box {
+  width: 240px;
+  height: 240px;
+  margin: 5px;
+  padding: 4px 5px;
+  float: left;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3em;
+  text-align: left;
+  line-height: .75em;
+  background: rgba(0, 0, 0, 0.9);
+  text-transform: lowercase;
+  color: #fff; }
