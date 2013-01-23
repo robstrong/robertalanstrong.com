@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed);
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Cabin Condensed", sans-serif; }
+
+.background-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351F2B;
+  background-image: url("/images/ny_street_filtered.jpg");
+  background-position: center;
+  z-index: -1; }
+
+.content-container {
+  width: 780px;
+  height: 520px;
+  margin: 50px auto 0 auto; }
+
+.flip-box-container {
+  width: 260px;
+  height: 260px;
+  float: left;
+  position: relative; }
+
+.flip-box-container .flip-box {
+  width: 240px;
+  height: 240px;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: all 250ms ease;
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.flip-box-container .flip-box-front {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3em;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.7);
+  text-transform: lowercase;
+  color: #fff;
+  -webkit-transform: rotateY(0deg);
+  -webkit-transition-delay: 250ms; }
+
+.flip-box-container .flip-box-back {
+  background-color: #CFB095;
+  background: rgba(207, 176, 149, 0.7);
+  cursor: pointer;
+  -webkit-transform: rotateY(90deg);
+  -webkit-transition-delay: 0ms; }
+
+.flip-box-container:hover .flip-box-front {
+  -webkit-transform: rotateY(90deg);
+  -webkit-transition-delay: 0ms; }
+
+.flip-box-container:hover .flip-box-back {
+  -webkit-transform: rotateY(0deg);
+  -webkit-transition-delay: 250ms; }
+
+.static-box {
+  width: 240px;
+  height: 240px;
+  margin: 5px;
+  padding: 4px 5px;
+  float: left;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3em;
+  text-align: left;
+  line-height: .75em;
+  background: rgba(0, 0, 0, 0.9);
+  text-transform: lowercase;
+  color: #fff; }

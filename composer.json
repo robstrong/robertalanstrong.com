@@ -1,0 +1,7 @@
+{
+    "require": {
+        "silex/silex": "1.0.*@dev",
+        "mheap/silex-assetic": "dev-master",
+        "twig/twig": "1.12.*@dev"
+    }
+}
