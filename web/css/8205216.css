@@ -33,7 +33,12 @@ html, body {
   height: 240px;
   margin: 5px;
   padding: 5px;
+  transition: all 250ms ease;
   -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  /* Firefox 4 */
+  -o-transition: all 250ms ease;
+  /* Opera */
   perspective: 800px;
   perspective-origin: 50% 100px;
   position: absolute;
@@ -49,23 +54,71 @@ html, body {
   background: rgba(0, 0, 0, 0.7);
   text-transform: lowercase;
   color: #fff;
+  transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
-  -webkit-transition-delay: 250ms; }
+  -ms-transform: rotateY(0deg);
+  /* IE 9 */
+  -moz-transform: rotateY(0deg);
+  /* Firefox */
+  -o-transform: rotateY(0deg);
+  /* Opera */
+  transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  /* Firefox 4 */
+  -o-transition-delay: 250ms;
+  /* Opera */ }
 
 .flip-box-container .flip-box-back {
   background-color: #CFB095;
   background: rgba(207, 176, 149, 0.7);
   cursor: pointer;
+  transform: rotateY(90deg);
   -webkit-transform: rotateY(90deg);
-  -webkit-transition-delay: 0ms; }
+  -ms-transform: rotateY(90deg);
+  /* IE 9 */
+  -moz-transform: rotateY(90deg);
+  /* Firefox */
+  -o-transform: rotateY(90deg);
+  /* Opera */
+  transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  /* Firefox 4 */
+  -o-transition-delay: 0ms;
+  /* Opera */ }
 
 .flip-box-container:hover .flip-box-front {
+  transform: rotateY(90deg);
   -webkit-transform: rotateY(90deg);
-  -webkit-transition-delay: 0ms; }
+  -ms-transform: rotateY(90deg);
+  /* IE 9 */
+  -moz-transform: rotateY(90deg);
+  /* Firefox */
+  -o-transform: rotateY(90deg);
+  /* Opera */
+  transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  /* Firefox 4 */
+  -o-transition-delay: 0ms;
+  /* Opera */ }
 
 .flip-box-container:hover .flip-box-back {
+  transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
-  -webkit-transition-delay: 250ms; }
+  -ms-transform: rotateY(0deg);
+  /* IE 9 */
+  -moz-transform: rotateY(0deg);
+  /* Firefox */
+  -o-transform: rotateY(0deg);
+  /* Opera */
+  transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  /* Firefox 4 */
+  -o-transition-delay: 250ms;
+  /* Opera */ }
 
 .static-box {
   width: 240px;

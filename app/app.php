@@ -9,10 +9,11 @@ $app['debug'] = true;
 /*************************
 * REGISTER COMPOENTS
 *************************/
+
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__ . '/../app/views',
 ));
-
+/*
 $app->register(new SilexAssetic\AsseticExtension(), array(
     'assetic.class_path' => __DIR__.'/vendor/assetic/src',
     'assetic.path_to_web' => __DIR__ . '/../web',
@@ -25,13 +26,12 @@ $app->register(new SilexAssetic\AsseticExtension(), array(
         ));
     })
 ));
-
+ */
 /*******************
 * SETUP ROUTING
 *******************/
 $pages = array(
     '/'             => 'home',
-    '/experience'   => 'experience',
 );
 foreach ($pages as $route => $view) {
     $app->get($route, function () use ($app, $view) {
