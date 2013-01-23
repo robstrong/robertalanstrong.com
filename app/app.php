@@ -4,6 +4,8 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
 $env = 'prod';
+defined('ENV')
+        || define('ENV', 'development');
 
 if ($env != 'prod') {
     $app['debug'] = true;
@@ -18,7 +20,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__ . '/../app/views',
 ));
 
-if ($env != 'prod') {
+if (ENV != 'production') {
     $app->register(new SilexAssetic\AsseticExtension(), array(
         'assetic.class_path' => __DIR__.'/vendor/assetic/src',
         'assetic.path_to_web' => __DIR__ . '/../web',
