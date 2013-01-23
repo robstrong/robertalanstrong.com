@@ -13,10 +13,11 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #351F2B;
-    background-image: url('/images/ny_street_filtered.jpg');
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: url('/images/ny_street_filtered.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -115,7 +116,7 @@ html, body {
     font-size: 3em;
     text-align: left;
     line-height: .75em;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(249, 242, 202, 0.9);
     text-transform:lowercase;
-    color: #fff;
+    color: #000;
 }
