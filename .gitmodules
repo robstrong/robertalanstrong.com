@@ -1,0 +1,9 @@
+[submodule "vendor/mheap/silex-assetic"]
+    path = vendor/mheap/silex-assetic
+    url = https://github.com/mheap/Silex-Assetic.git
+[submodule "vendor/silex/silex"]
+    path = vendor/silex/silex
+    url = https://github.com/fabpot/Silex.git
+[submodule "vendor/twig/twig"]
+    path = vendor/twig/twig
+    url = https://github.com/fabpot/Twig.git
