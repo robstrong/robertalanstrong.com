@@ -7,6 +7,7 @@ RUN /root/docker/scripts/epel.sh
 RUN /root/docker/scripts/remi.sh
 RUN /root/docker/scripts/os.sh
 RUN /root/docker/scripts/php54.sh
+RUN /root/docker/scripts/sass.sh
 
 # Open SSH and Apache ports
 EXPOSE  80 22
