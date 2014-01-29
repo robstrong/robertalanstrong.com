@@ -33,7 +33,7 @@ if (ENV != 'production') {
         ),
         'assetic.filters' => $app->protect(function($fm) {
             $fm->set('scss', new Assetic\Filter\Sass\ScssFilter(
-                '/usr/bin/scss'
+                '/usr/bin/sass'
             ));
         }),
         'assetic.assets' => $app->protect(function($am, $fm) {
